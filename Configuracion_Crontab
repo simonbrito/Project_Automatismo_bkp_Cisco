@@ -1,0 +1,19 @@
+##Con el Crontab lograremos automatizar la ejecucion de cada script segun sea nuestras necesidades. En mi caso, se genero 1 Bkp Diario, 
+##1 Semanal y una anual.
+##Tener en cuenta que con esta herramienta se puede adaptar para realizar el respaldo con la periodicidad que se desee.
+
+
+ ## Realiza BKP todos los dias a las 23:30 Hrs.
+ 
+      30 23 * * 0-6 . /opt/bkp_diario/lanzadorbkp.sh  
+
+## RECOMENDACIONES:
+ #Para que la ejecucion de CRON no solicite password durante el proceso de automatizacion, es necesario:
+  
+      sudo usermon -aG sudo (Usuario)
+    
+  #Y editar archivo: sudo visudo
+  
+  #Agregar al final de lineas:
+  
+       %sudo ALL=NOPASSWD: ALL
