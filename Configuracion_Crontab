@@ -8,7 +8,7 @@
       30 23 * * 0-6 . /opt/bkp_diario/lanzadorbkp.sh  
 
 ## RECOMENDACIONES:
- # Para que la ejecución de CRON no solicite password durante el proceso de automatización es necesario ejecutar los siguientes comandos:
+ # Para que la ejecución de Crontab no solicite password durante el proceso de automatización es necesario ejecutar los siguientes comandos:
   
       sudo usermon -aG sudo (Usuario)
     
