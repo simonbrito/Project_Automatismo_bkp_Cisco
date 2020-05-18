@@ -8,7 +8,7 @@
       30 23 * * 0-6 . /opt/bkp_diario/lanzadorbkp.sh  
 
 ## RECOMENDACIONES:
- # Para que la ejecucion de CRON no solicite password durante el proceso de automatizacion, es necesario:
+ # Para que la ejecucion de CRON no solicite password durante el proceso de automatización es necesario ejecutar los siguientes comandos:
   
       sudo usermon -aG sudo (Usuario)
     
