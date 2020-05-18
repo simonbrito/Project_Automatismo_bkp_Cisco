@@ -9,8 +9,8 @@ CiscoIOSv
 #Pasos:
 1.- Generar carpetas que detallen backups diarios/mensuales/anuales. //
 2.- Cada carpeta generada debe contener los archivos (script.py / Lanzador.sh / Archivo host) //
-3.- Ahora mediante la herramienta Cron, llamaremos cada lanzador dentro de cada carpeta para programar su ejecucion segun se desee.
-(tener en cuenta la ruta del lanzador que debe ser editada segun sea el script; es decir, diario/mensual/anual)
+3.- luego usando Crontab, llamaremos cada lanzador.sh dentro de cada carpeta para programar su ejecución según se desee.
+Tener en cuenta la ruta del lanzador que debe ser editada según sea el script; es decir, diario/mensual/anual.
 
 
 
